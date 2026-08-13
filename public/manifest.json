@@ -1,0 +1,17 @@
+{
+  "short_name": "Forêt Mixte",
+  "name": "Forêt Mixte Score - Forest Shuffle",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#16171d",
+  "theme_color": "#22c55e",
+  "display": "standalone",
+  "orientation": "portrait"
+}

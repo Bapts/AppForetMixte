@@ -1,0 +1,24 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App'
+
+// Enregistrement du Service Worker pour le support 100% hors-ligne
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then((reg) => {
+        console.log('Service Worker enregistré avec succès :', reg.scope);
+      })
+      .catch((err) => {
+        console.error('Échec de l\'enregistrement du Service Worker :', err);
+      });
+  });
+}
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

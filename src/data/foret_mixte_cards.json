@@ -1,0 +1,650 @@
+[
+  {
+    "id": "FM_001",
+    "name": "Chêne",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "10 points si vous avez au moins 8 espèces d'arbres différentes dans votre forêt."
+  },
+  {
+    "id": "FM_002",
+    "name": "Hêtre",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "5 points par Hêtre si vous avez au moins 4 Hêtres dans votre forêt."
+  },
+  {
+    "id": "FM_003",
+    "name": "Bouleau",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "1 point fixe. Lorsque vous le jouez, piochez 1 carte."
+  },
+  {
+    "id": "FM_004",
+    "name": "Érable",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "1 point par carte rattachée à cet Érable."
+  },
+  {
+    "id": "FM_005",
+    "name": "Tilleul",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "10 points au joueur qui possède le plus de Tilleuls (3 points en cas d'égalité)."
+  },
+  {
+    "id": "FM_006",
+    "name": "Marronnier",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "1 point par espèce d'Arbre différente dans votre forêt."
+  },
+  {
+    "id": "FM_007",
+    "name": "Sapin Douglas",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "5 points si cet arbre est entièrement occupé (4 cartes rattachées)."
+  },
+  {
+    "id": "FM_008",
+    "name": "Pin sylvestre",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "3 points si vous avez au moins 3 Pins sylvestres dans votre forêt."
+  },
+  {
+    "id": "FM_009",
+    "name": "Pousse d'arbre",
+    "expansion": "Base",
+    "slot": "Tree",
+    "cost": 0,
+    "category": "Arbre",
+    "scoringRuleDescription": "0 point. Sert de support d'arbre générique pour 4 cartes rattachées."
+  },
+  {
+    "id": "FM_010",
+    "name": "Autour des palombes",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 2,
+    "category": "Oiseau",
+    "scoringRuleDescription": "3 points par Oiseau dans votre forêt (y compris lui-même)."
+  },
+  {
+    "id": "FM_011",
+    "name": "Chouette hulotte",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "1 point par Chauve-souris et par Oiseau dans votre forêt."
+  },
+  {
+    "id": "FM_012",
+    "name": "Bouvreuil pivoine",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "2 points par Insecte dans votre forêt."
+  },
+  {
+    "id": "FM_013",
+    "name": "Pic noir",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "2 points par Arbre totalement occupé (4 cartes rattachées) dans votre forêt."
+  },
+  {
+    "id": "FM_014",
+    "name": "Grand Tétras",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 2,
+    "category": "Oiseau",
+    "scoringRuleDescription": "3 points par Champignon dans votre forêt."
+  },
+  {
+    "id": "FM_015",
+    "name": "Rougegorge",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 0,
+    "category": "Oiseau",
+    "scoringRuleDescription": "1 point fixe. Permet de rejouer immédiatement un tour."
+  },
+  {
+    "id": "FM_016",
+    "name": "Barbastelle d'Europe",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 1,
+    "category": "ChauveSouris",
+    "scoringRuleDescription": "5 points par Chauve-souris si vous avez au moins 3 espèces de Chauves-souris différentes."
+  },
+  {
+    "id": "FM_017",
+    "name": "Grand Rhinolophe",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 1,
+    "category": "ChauveSouris",
+    "scoringRuleDescription": "5 points si vous avez au moins 3 Chauves-souris dans votre forêt."
+  },
+  {
+    "id": "FM_018",
+    "name": "Oreillard roux",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 0,
+    "category": "ChauveSouris",
+    "scoringRuleDescription": "1 point par Chauve-souris dans votre forêt."
+  },
+  {
+    "id": "FM_019",
+    "name": "Pipistrelle commune",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 0,
+    "category": "ChauveSouris",
+    "scoringRuleDescription": "2 points si associée à une carte de la catégorie Insecte sous le même arbre."
+  },
+  {
+    "id": "FM_020",
+    "name": "Paon du jour",
+    "expansion": "Base",
+    "slot": "Top",
+    "cost": 0,
+    "category": "Insecte",
+    "scoringRuleDescription": "3 points s'il y a au moins une Plante sous le même arbre."
+  },
+  {
+    "id": "FM_021",
+    "name": "Amanite tue-mouches",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Champignon",
+    "scoringRuleDescription": "0 point. Effet : piochez immédiatement 2 cartes lorsque vous la jouez."
+  },
+  {
+    "id": "FM_022",
+    "name": "Cèpe de Bordeaux",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Champignon",
+    "scoringRuleDescription": "2 points par Champignon dans votre forêt."
+  },
+  {
+    "id": "FM_023",
+    "name": "Pied-de-mouton",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Champignon",
+    "scoringRuleDescription": "3 points si vous avez au moins 3 Champignons dans votre forêt."
+  },
+  {
+    "id": "FM_024",
+    "name": "Chanterelle",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Champignon",
+    "scoringRuleDescription": "1 point par Champignon + 1 point par Plante dans votre forêt."
+  },
+  {
+    "id": "FM_025",
+    "name": "Coprin chevelu",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Champignon",
+    "scoringRuleDescription": "2 points par Coprin chevelu dans votre forêt."
+  },
+  {
+    "id": "FM_026",
+    "name": "Grande Ortie",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Plante",
+    "scoringRuleDescription": "1 point par Insecte rattaché au même arbre."
+  },
+  {
+    "id": "FM_027",
+    "name": "Mûre sauvage",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Plante",
+    "scoringRuleDescription": "2 points par Plante dans votre forêt."
+  },
+  {
+    "id": "FM_028",
+    "name": "Fougère",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Plante",
+    "scoringRuleDescription": "3 points par Fougère si vous en avez au moins 3 dans votre forêt."
+  },
+  {
+    "id": "FM_029",
+    "name": "Mousse",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Plante",
+    "scoringRuleDescription": "1 point fixe. Permet de payer 1 de coût en moins pour la prochaine carte."
+  },
+  {
+    "id": "FM_030",
+    "name": "Crapaud commun",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Amphibien",
+    "scoringRuleDescription": "1 point par Amphibien dans votre forêt."
+  },
+  {
+    "id": "FM_031",
+    "name": "Salamandre tachetée",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Amphibien",
+    "scoringRuleDescription": "3 points par Amphibien si vous avez au moins 1 Sanglier/Marcassin dans votre forêt."
+  },
+  {
+    "id": "FM_032",
+    "name": "Triton alpestre",
+    "expansion": "Base",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Amphibien",
+    "scoringRuleDescription": "2 points par Amphibien et Insecte sous le même arbre."
+  },
+  {
+    "id": "FM_033",
+    "name": "Lucane cerf-volant",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 0,
+    "category": "Insecte",
+    "scoringRuleDescription": "1 point par Insecte dans votre forêt."
+  },
+  {
+    "id": "FM_034",
+    "name": "Luciole",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 0,
+    "category": "Insecte",
+    "scoringRuleDescription": "2 points si rattachée à un Bouleau ou à un Érable."
+  },
+  {
+    "id": "FM_035",
+    "name": "Coccinelle",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 1,
+    "category": "Insecte",
+    "scoringRuleDescription": "1 point par Insecte + 1 point par Champignon dans votre forêt."
+  },
+  {
+    "id": "FM_036",
+    "name": "Abeille mellifère",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 1,
+    "category": "Insecte",
+    "scoringRuleDescription": "3 points par Tilleul dans votre forêt."
+  },
+  {
+    "id": "FM_037",
+    "name": "Loir gris",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 0,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "1 point fixe. Permet également de mettre 1 carte sous la Grotte."
+  },
+  {
+    "id": "FM_038",
+    "name": "Écureuil roux",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "5 points si rattaché à un Chêne."
+  },
+  {
+    "id": "FM_039",
+    "name": "Hérisson",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 0,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "2 points si placé au pied d'un arbre comportant une Plante."
+  },
+  {
+    "id": "FM_040",
+    "name": "Lièvre d'Europe",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "1 point par Lièvre d'Europe dans votre forêt."
+  },
+  {
+    "id": "FM_041",
+    "name": "Blaireau",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 2,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "2 points par Petit Mammifère dans votre forêt."
+  },
+  {
+    "id": "FM_042",
+    "name": "Raton laveur",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "3 points si au moins 2 cartes sont stockées dans votre Grotte."
+  },
+  {
+    "id": "FM_043",
+    "name": "Lynx",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 2,
+    "category": "GrandCarnivore",
+    "scoringRuleDescription": "10 points si vous avez au moins 1 Cervidé dans votre forêt."
+  },
+  {
+    "id": "FM_044",
+    "name": "Loup gris",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 2,
+    "category": "GrandCarnivore",
+    "scoringRuleDescription": "5 points par Cervidé dans votre forêt."
+  },
+  {
+    "id": "FM_045",
+    "name": "Ours brun",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 3,
+    "category": "GrandCarnivore",
+    "scoringRuleDescription": "2 points par carte déposée dans votre Grotte."
+  },
+  {
+    "id": "FM_046",
+    "name": "Chevreuil",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 1,
+    "category": "Cervide",
+    "scoringRuleDescription": "3 points par Chevreuil dans votre forêt."
+  },
+  {
+    "id": "FM_047",
+    "name": "Cerf élaphe",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 2,
+    "category": "Cervide",
+    "scoringRuleDescription": "1 point par carte Arbre et par Cervidé dans votre forêt."
+  },
+  {
+    "id": "FM_048",
+    "name": "Élan",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 3,
+    "category": "Cervide",
+    "scoringRuleDescription": "10 points si vous avez au moins 4 Cervidés dans votre forêt."
+  },
+  {
+    "id": "FM_049",
+    "name": "Sanglier",
+    "expansion": "Base",
+    "slot": "Right",
+    "cost": 2,
+    "category": "Sanglier",
+    "scoringRuleDescription": "2 points par Marcassin et par Sanglier dans votre forêt."
+  },
+  {
+    "id": "FM_050",
+    "name": "Marcassin",
+    "expansion": "Base",
+    "slot": "Left",
+    "cost": 0,
+    "category": "Sanglier",
+    "scoringRuleDescription": "1 point par Sanglier ou Marcassin dans votre forêt."
+  },
+  {
+    "id": "FM_051",
+    "name": "Mélèze d'Europe",
+    "expansion": "Alpes",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "3 points par carte d'altitude de l'extension Alpes rattachée à vos arbres."
+  },
+  {
+    "id": "FM_052",
+    "name": "Pin Cembro",
+    "expansion": "Alpes",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "4 points si vous avez au moins 2 cartes de l'extension Alpes à proximité."
+  },
+  {
+    "id": "FM_053",
+    "name": "Épicéa commun",
+    "expansion": "Alpes",
+    "slot": "Tree",
+    "cost": 2,
+    "category": "Arbre",
+    "scoringRuleDescription": "2 points par carte Champignon et Plante rattachée à cet Épicéa."
+  },
+  {
+    "id": "FM_054",
+    "name": "Aigle royal",
+    "expansion": "Alpes",
+    "slot": "Top",
+    "cost": 2,
+    "category": "Oiseau",
+    "scoringRuleDescription": "10 points si placé sur un arbre abritant un Petit Mammifère."
+  },
+  {
+    "id": "FM_055",
+    "name": "Lagopède alpin",
+    "expansion": "Alpes",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "3 points par carte de l'extension Alpes dans votre forêt."
+  },
+  {
+    "id": "FM_056",
+    "name": "Chocard à bec jaune",
+    "expansion": "Alpes",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "2 points par Oiseau et par carte d'altitude."
+  },
+  {
+    "id": "FM_057",
+    "name": "Bouquetin des Alpes",
+    "expansion": "Alpes",
+    "slot": "Left",
+    "cost": 2,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "4 points par Bouquetin si au moins 2 Bouquetins sont présents dans votre forêt."
+  },
+  {
+    "id": "FM_058",
+    "name": "Chamois",
+    "expansion": "Alpes",
+    "slot": "Right",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "3 points par Chamois s'il est rattaché à un arbre d'altitude (Mélèze/Pin Cembro/Épicéa)."
+  },
+  {
+    "id": "FM_059",
+    "name": "Marmotte",
+    "expansion": "Alpes",
+    "slot": "Left",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "1 point fixe. Permet de placer immédiatement 2 cartes sous la Grotte."
+  },
+  {
+    "id": "FM_060",
+    "name": "Chèvre sauvage",
+    "expansion": "Alpes",
+    "slot": "Right",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "2 points par espèce d'Arbre d'altitude présente dans votre forêt."
+  },
+  {
+    "id": "FM_061",
+    "name": "Edelweiss",
+    "expansion": "Alpes",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Plante",
+    "scoringRuleDescription": "5 points si vous avez au moins 3 espèces de Plantes différentes."
+  },
+  {
+    "id": "FM_062",
+    "name": "Gentiane alpine",
+    "expansion": "Alpes",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Plante",
+    "scoringRuleDescription": "3 points par Gentiane alpine si combinée avec un Épicéa ou un Mélèze."
+  },
+  {
+    "id": "FM_063",
+    "name": "Aubépine",
+    "expansion": "Lisière",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "4 points. Fournit seulement 2 emplacements (Haut et Bas) au lieu de 4."
+  },
+  {
+    "id": "FM_064",
+    "name": "Sureau noir",
+    "expansion": "Lisière",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "2 points par Arbuste/Haie dans votre forêt."
+  },
+  {
+    "id": "FM_065",
+    "name": "Noisetier",
+    "expansion": "Lisière",
+    "slot": "Tree",
+    "cost": 1,
+    "category": "Arbre",
+    "scoringRuleDescription": "3 points si au moins 1 Petit Mammifère y est rattaché."
+  },
+  {
+    "id": "FM_066",
+    "name": "Geai des chênes",
+    "expansion": "Lisière",
+    "slot": "Top",
+    "cost": 1,
+    "category": "Oiseau",
+    "scoringRuleDescription": "2 points par Chêne et par Aubépine dans votre forêt."
+  },
+  {
+    "id": "FM_067",
+    "name": "Machaon",
+    "expansion": "Lisière",
+    "slot": "Top",
+    "cost": 0,
+    "category": "Insecte",
+    "scoringRuleDescription": "3 points s'il est rattaché à une Plante de lisière."
+  },
+  {
+    "id": "FM_068",
+    "name": "Cerf Axis",
+    "expansion": "Lisière",
+    "slot": "Right",
+    "cost": 2,
+    "category": "Cervide",
+    "scoringRuleDescription": "4 points par Cerf Axis si rattaché près d'un Arbuste ou d'un Sureau."
+  },
+  {
+    "id": "FM_069",
+    "name": "Belette",
+    "expansion": "Lisière",
+    "slot": "Left",
+    "cost": 1,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "2 points par Insecte présent sur le même arbre."
+  },
+  {
+    "id": "FM_070",
+    "name": "Muscardin",
+    "expansion": "Lisière",
+    "slot": "Right",
+    "cost": 0,
+    "category": "PetitMammifere",
+    "scoringRuleDescription": "3 points s'il est rattaché à un Sureau, Noisetier ou Mûre sauvage."
+  },
+  {
+    "id": "FM_071",
+    "name": "Lierre terrestre",
+    "expansion": "Lisière",
+    "slot": "Bottom",
+    "cost": 0,
+    "category": "Plante",
+    "scoringRuleDescription": "2 points par Arbre ayant un Lierre à sa base."
+  },
+  {
+    "id": "FM_072",
+    "name": "Genêt à balais",
+    "expansion": "Lisière",
+    "slot": "Bottom",
+    "cost": 1,
+    "category": "Plante",
+    "scoringRuleDescription": "2 points par Plante et par Insecte dans votre lisière."
+  }
+]
