@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Camera, X, Check, Loader2 } from 'lucide-react';
+import { Camera, X, Loader2, ScanLine, Cloud, WifiOff } from 'lucide-react';
+import { OCRScannerModal } from './OCRScannerModal';
 
 interface ScannerModalProps {
   isOpen: boolean;
@@ -18,11 +19,26 @@ export interface ScanResult {
 export const ScannerModal: React.FC<ScannerModalProps> = ({ isOpen, onClose, onScanComplete }) => {
   const [isScanning, setIsScanning] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [ocrModalOpen, setOcrModalOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   if (!isOpen) return null;
 
-  const handleCapture = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  // Handle returning from the full-screen OCR modal
+  if (ocrModalOpen) {
+    return (
+      <OCRScannerModal
+        isOpen={true}
+        onClose={() => setOcrModalOpen(false)}
+        onScanComplete={(result) => {
+          setOcrModalOpen(false);
+          onScanComplete(result);
+        }}
+      />
+    );
+  }
+
+  const handleCaptureIA = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
@@ -86,42 +102,58 @@ export const ScannerModal: React.FC<ScannerModalProps> = ({ isOpen, onClose, onS
           
           <h3 className="text-lg font-bold text-white">Scanner un arbre</h3>
           
-          <p className="text-sm text-slate-400">
-            Prenez en photo votre arbre et ses cartes rattachées (en haut, en bas, à gauche, à droite) pour les ajouter automatiquement.
+          <p className="text-sm text-slate-400 mb-6">
+            Choisissez votre méthode de scan :
           </p>
 
           {error && (
-            <div className="p-3 bg-red-950/50 border border-red-900/50 rounded-xl text-red-400 text-xs">
+            <div className="p-3 bg-red-950/50 border border-red-900/50 rounded-xl text-red-400 text-xs text-left mb-4">
               {error}
             </div>
           )}
 
-          <div className="pt-4">
+          <div className="space-y-3">
+            {/* IA Cloud Scanner */}
             <input
               type="file"
               accept="image/*"
               capture="environment"
               className="hidden"
               ref={fileInputRef}
-              onChange={handleCapture}
+              onChange={handleCaptureIA}
             />
             
             <button
               onClick={() => fileInputRef.current?.click()}
               disabled={isScanning}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-emerald-600 hover:bg-emerald-500 disabled:bg-slate-800 disabled:text-slate-500 text-white font-bold rounded-xl transition-colors shadow-lg active:scale-95"
+              className="w-full flex items-center justify-between p-4 bg-slate-800 hover:bg-slate-750 border border-slate-700 hover:border-emerald-500/50 disabled:opacity-50 rounded-xl transition-all group active:scale-95 text-left"
             >
-              {isScanning ? (
-                <>
-                  <Loader2 className="animate-spin" size={20} />
-                  Analyse de l'image par l'IA...
-                </>
-              ) : (
-                <>
-                  <Camera size={20} />
-                  Ouvrir l'appareil photo
-                </>
-              )}
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-emerald-900/30 text-emerald-400 rounded-lg group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                  {isScanning ? <Loader2 className="animate-spin" size={20} /> : <Cloud size={20} />}
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-white leading-none mb-1">IA Vision (Cloud)</h4>
+                  <p className="text-[10px] text-slate-400 leading-tight">Ultra rapide et précis. Nécessite internet.</p>
+                </div>
+              </div>
+            </button>
+
+            {/* Local OCR Scanner */}
+            <button
+              onClick={() => setOcrModalOpen(true)}
+              disabled={isScanning}
+              className="w-full flex items-center justify-between p-4 bg-slate-800 hover:bg-slate-750 border border-slate-700 hover:border-emerald-500/50 disabled:opacity-50 rounded-xl transition-all group active:scale-95 text-left"
+            >
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-slate-900/50 text-slate-400 rounded-lg group-hover:bg-slate-600 group-hover:text-white transition-colors">
+                  <WifiOff size={20} />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-white leading-none mb-1">OCR Local (Hors-ligne)</h4>
+                  <p className="text-[10px] text-slate-400 leading-tight">Expérimental. Lent, 100% privé et sans connexion.</p>
+                </div>
+              </div>
             </button>
           </div>
         </div>
